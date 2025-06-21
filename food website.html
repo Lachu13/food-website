@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Website</title>
+    <style>
+        header img {
+            height: 200px;
+            width:1250px;
+            background-size: cover; 
+                    
+             }
+        h1{
+            font-size: 40px;
+            color: darkred;
+            font-weight: bold;
+            padding: 5px;
+            margin:3px;
+            }     
+        nav {
+            background-color:black;
+            display: flex;
+                
+            }
+                
+        nav a {
+            float: left;
+            color:white;
+            padding: 3px 35px;
+            text-decoration: none;
+            font-size: larger;
+                }
+        nav a:hover {
+            background-color:lightblue;
+            color:brown;
+            font-weight: bold;
+                }
+
+       .login {
+            background-color:skyblue;
+            border-radius: 5px;
+            font-weight: bold;
+                }
+       
+        .food {
+                width: 100%;
+                border-collapse: collapse;
+                padding: 10px;
+                margin: 3px;
+            
+                }
+        .food th{
+            background-color: white;
+                }
+        th img{
+            width: 200px;
+            height: 300px;
+                
+            }
+        .event{
+                border-collapse: collapse;
+                background-color: lightgray;
+            }
+
+        .event th:hover{
+            background-color:darkcyan;
+            }
+        th{
+            font-size: larger;
+            font-weight: bold;
+            color:lightgray;
+            background-color:black;
+            height: 50px;
+            }
+        td img{
+             width: 220px;
+             height: 250px;
+             border-radius: 10px;
+             padding: 12px;
+
+            }
+        td{
+            font-size: larger;
+            text-align: center;
+            }
+        td:hover{
+             background-color: lightcyan;
+            }
+        h2{
+            background-color:rgba(239, 220, 220, 0.662);
+            height: 20px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 1px;
+            }
+        #tickets {
+            padding: 10px 10px;
+            }
+          
+
+        .ticket-container {
+            display: flex;
+            justify-content: center;
+            }
+
+        .ticket {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            margin: 10px;
+            box-shadow:inset 10px 10px 10px rgba(0, 0, 0, 0.584);
+            background-color:lightgrey;
+            }
+
+        .ticket h3 {
+            color: brown;
+            font-size: 22px;
+            }
+
+        .ticket p {
+            font-size: 18px;
+            margin: 10px ;
+            }
+
+        .ticket button {
+            padding: 10px 20px;
+            background-color: lightcoral;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            box-shadow: 10px 10px 20px black;
+            
+            }
+
+         .ticket button:hover {
+            background-color:red;
+            }
+            #schedule h2{
+              width:95%
+            }
+
+        #schedule table {
+            border-collapse: collapse;
+            background-color: white;
+            margin:2px
+            }
+            #schedule td:hover{
+              background-color: lightslategray;
+            }
+
+            #schedule th, #schedule td {
+            padding: 10px;
+            border: 1px solid lightslategray;
+            text-align: center;
+            font-size: 16px;
+            }
+
+            #schedule th {
+            background-color:black;
+            color: white;
+            height: 20px;
+            }
+
+            #schedule tr:nth-child(even) {
+            background-color:lightcyan;
+            }
+            
+            .form-container {
+                display: flex;
+                justify-content: space-between;
+              }
+           
+
+    .login-section, .register-section {
+      padding: 30px;
+      width: 400px;
+      border-radius: 15px;
+      font-family: Arial, sans-serif;
+      background-color: rgba(119, 136, 153, 0.096);
+      margin: 5px;
+    }
+
+    .login-section h2, .register-section h2 {
+      text-align: center;
+    }
+
+    .login-section form, .register-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-section label, .register-section label {
+      margin: 8px ;
+      font-weight: bold;
+    }
+
+    .login-section input, .register-section input {
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .login-section button, .register-section button {
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: lightcoral;
+    }
+
+    .login-section button:hover, .register-section button:hover {
+      background-color: brown;
+    }
+    .se-container {
+                display: flex;
+                justify-content: space-between;
+              }
+          .entertainment-section th{
+                margin: 2px;
+                padding-left: 6px;
+          
+              }
+            .entertainment-section img{
+                height: 320px;
+              }
+              .entertainment-section td{
+                background-color:grey;
+              }
+          .Contact-footer {
+            background-color:rgba(211, 211, 211, 0.644);
+                padding: 30px;
+                font-family: Arial, sans-serif;
+                text-align: center;
+              }
+              .Contact-footer p {
+                  font-size: 16px;
+                  color: darkmagenta;
+                  text-align: center;
+                  font-weight: bold;
+                }
+                .explore{  
+                width: 100%;
+                border-collapse: collapse;
+                padding: 20px 90px;
+                
+                }
+                .explore th{
+                  background-color: lightgray;
+                }
+        .explore th img{
+            width: 250px;
+            height: 200px;
+            border-radius: 600px;
+            padding: 3px;
+                
+         }
+         .explore td{
+          background-color: lightgrey;
+          height: 50px;
+         }
+         .explore :hover{
+          background-color: lightcyan;
+         }
+        </style>
+
+        <body>
+            <header>
+                <img src="food.png" alt="Food Exhibition Banner">
+
+            </header>
+
+            <nav>
+                <ul style="display: flex; list-style: none; padding: 0;">
+                  <li><a href="#Home">HOME</a></li>
+                  <li><a href="#stalls">FOOD</a></li>
+                  <li><a href="#events">EVENTS</a></li>
+                  <li><a href="#enter">ENTERTAINMENT</a></li>
+                  <li><a href="#schedule">SCHEDULE</a></li>
+                  <li><a href="#tickets">TICKETS</a></li>
+                  <li><a href="#contact-us" >CONTACT</a></li>
+                  <li><a href="#login" class="login">LOGIN</a></li>
+                </ul>
+              </nav>
+              <marquee><h1>" The Table is Set, and You're the Guest of Honor-WELCOME..! "</h1></marquee>
+
+              <section id="stalls">
+                <table class="food">
+                    <h2>FOOD</h2>
+                    <tr>
+                        <th><img src="burger.jpg"> </th>
+                        <th> <img src="pizza.jpg"></th>
+                        <th><img src="dessert.jpg"></th>
+                        <th><img src="tac.jpg"></th>
+                        <th><img src="nood.jpg"></th>
+                        <th><img src="briyani.jpg"></th>
+                    </tr>
+                </table>
+                <section id="events">
+                    <h2 >EVENTS</h2>
+                    <table class="event">
+                        <tr>
+                        <th>Chilli Cook Off</th>
+                        <th>Fireless Cooking</th>
+                        <th>Kid's Cooking Corner</th>
+                        <th>Food Fashion Show</th>
+                        <th>Food Decoration</th>
+                      </tr>
+                      <tr>
+                        <td><img src="chillico.jpg" class="event-img"></td>
+                        <td><img src="fire.jpg" class="event-img"></td>
+                        <td><img src="kids cook.jpg" class="event-img"></td>
+                        <td><img src="fashion1.jpg" class="event-img"></td>
+                        <td><img src="plate.jpg" class="event-img"></td>
+
+                      </tr>
+                      
+                     <tr>
+                      <td>Local Chefs or home cooks compete<br>with their best chili recipes</td>
+                      <td>Participants Guess the ingredients<br>or brand in a blindfolded challenge</td>
+                      <td>Simple Cooking activities<br>or decorating cookies</td>
+                      <td>Participants dress in outfits made of<br>inspired by food</td>
+                      <td>Focus on the artistry of food presentation, <br>
+                        emphasizing visual appeal and creativity. </td>
+                     </tr>
+                      
+                    </table>
+                   </section>
+                   <section id="tickets">
+                    <h2 style="background-color: black;color: white;font-weight: bold; " >GET YOUR TICKETS</h2>
+                    <div class="ticket-container">                      
+                      <div class="ticket">
+                        <h3>Regular Pass</h3>
+                        <p>Rs.200 / person</p>
+                        <p>Access to food stalls and Limited Stalls allowed</p>
+                        <button>Buy Now</button>
+                      </div>
+                  
+                      <div class="ticket">
+                        <h3>VIP Pass</h3>
+                        <p>Rs.500/- </p>
+                        <p>Includes food tasting and fast entry</p>
+                        <button>Buy Now</button>
+                
+                      </div>
+                  
+                      <div class="ticket">
+                        <h3>Student Entry</h3>
+                        <p>Rs.100/- (valid Student ID card)</p>
+                        <p>Access to learning sessions</p>
+                        <button>Buy Now</button>
+                        
+                     
+                    </div>
+                  </section>
+                  <!-- schedule -->
+                   <div class="se-container">
+                  <section id="schedule">
+                    <h2 >SCHEDULE</h2><br>
+                    <table>
+                        
+                      <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Location</th>
+                      </tr>
+                      <tr>
+                        <td>10:00 AM</td>
+                        <td>Opening Ceremony</td>
+                        <td>Main Stage</td>
+                      </tr>
+                      <tr>
+                        <td>10:30 AM</td>
+                        <td>Chill Cook Off</td>
+                        <td>Stall Area A</td>
+                      </tr>
+                      <tr>
+                        <td>12:00 PM</td>
+                        <td>Kids Cooking Corner</td>
+                        <td>Zone B</td>
+                      </tr>
+                      <tr>
+                        <td>1:00 PM</td>
+                        <td>Live Cooking Workshop</td>
+                        <td>Workshop Tent</td>
+                      </tr>
+                      <tr>
+                        <td>2:30 PM</td>
+                        <td>Best Bite Contest</td>
+                        <td>Stall Area C</td>
+                      </tr>
+                      <tr>
+                        <td>4:00 PM</td>
+                        <td>Food Fashion Show</td>
+                        <td>Main Stage</td>
+                      </tr>
+                      <tr>
+                        <td>5:30 PM</td>
+                        <td>Blind Taste Test</td>
+                        <td>Stall C</td>
+                      </tr>
+                      <tr>
+                        <td>7:00 PM</td>
+                        <td>Closing Remarks & Awards</td>
+                        <td>Main Stage</td>
+                      </tr>
+                    </table>
+                  </section><br>
+                   <!-- Entertainment -->
+  <section id="enter" class="entertainment-section">
+    <h2>ENTERTAINMENT ZONE</h2><br>
+    <table>
+      <tr>
+        <th><img src="dj.jpg"> </th>
+        <th><img src="magic.jpg"></th>
+        <th><img src="face.jpg"></th>
+        <th><img src="comedy.jpg"></th>
+
+      </tr>
+      <tr>
+        <td>DJ Vibe</td>
+        <td>Magic Show</td>
+        <td>Free Facepainting</td>
+        <td>StandUp Comedy</td>
+      </tr>
+    </table>
+  </section>
+</div><br>
+  <table class="explore">
+      <h2>EXPLORE MORE</h2><br>
+      <tr>
+          <th><img src="COMFORT.jpg"> </th>
+          <th><img src="inter.webp"> </th>
+          <th><img src="brunch.jpg"> </th>
+          <th><img src="fish.webp"> </th>
+          <th><img src="cream.webp"> </th>          
+      </tr>
+      <tr>
+        <td>COMFORT FOODS</td>
+        <td>INTERNATIONAL FOODS</td>
+        <td>BRUNCH</td>
+        <td>OVEN BAKED RECIPES</td>
+        <td>WHIPED CREAM FROSTING</td>
+        
+      </tr>
+  </table>
+  <br>
+
+                  <div class="form-container">
+                    <!-- login -->
+                     
+                    <section id="login" class="login-section">
+                    <h2 style="background-color: black;color: white;font-weight: bold;">LOGIN FORM</h2>
+<br>
+                      <form>
+                        <label>User Name:</label>
+                        <input type="text"  placeholder="username" required>
+                
+                        <label>Password:</label>
+                        <input type="password"  placeholder="password" required>
+                
+                        <div class="checkbox">
+                          <input type="checkbox" >
+                          <label>I agree to all terms</label>
+                        </div>
+                
+                        <button >LOGIN</button>
+                      </form>
+                    </section>
+                
+                    <!-- register -->
+
+                    <section class="register-section">
+                      <h2 style="background-color: black;color: white;font-weight: bold;">REGISTRATION FORM</h2>
+<br>
+                      <form>
+                        <label >Username:</label>
+                        <input type="text"  placeholder="username" required>
+                
+                        <label >Email:</label>
+                        <input type="email" placeholder="Email" required>
+                
+                        <label>Password:</label>
+                        <input type="password"  placeholder="Create  password" required>
+                
+                        <label >Confirm Password:</label>
+                        <input type="password"  placeholder="Confirm  password" required>
+                
+                        <div class="checkbox">
+                          <input type="checkbox">
+                          <label >I accept all terms and conditions</label>
+                        </div>
+                
+                        <button type="submit">REGISTER</button>
+                      </form>
+                    </section>
+                  </div>
+                        
+                  
+                  
+                <h2 style="background-color: black;color: white;font-weight: bold;">CONTACT</h2>  
+                <div id="contact-us" class="Contact-footer">               
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15720.395749240724!2d78.11446947578337!3d9.92571787949556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5be1708521d%3A0x37f26c3ad83276e3!2sThamukam%20Ground!5e0!3m2!1sen!2sin!4v1745337678027!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Tamukkam Sports ground in Madurai,<br> Tamil Nadu - 625002<br>Mobile: 9832752100</p>
+                <footer>
+                <p>&copy; 2025 "Food Carnival". All rights reserved.</p>
+                </footer>
+                <marquee><h3 style="color: darkred;font-weight: bolder;font-size: 40px;">THANK YOU...!</h3>
+                </marquee>
+                </div>
+        </body>
+    </head>
+</html>
